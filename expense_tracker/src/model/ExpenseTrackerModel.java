@@ -87,7 +87,7 @@ public class ExpenseTrackerModel {
     //
     // TODO
     // Also checks null.
-    if (containsListener(listener)) {
+    if (listener == null || containsListener(listener)) {
       return false;
     }
     listeners.add(listener);
